@@ -26,7 +26,7 @@ export async function getStaticProps() {
     },
     body: JSON.stringify({
       query: `query {
-        repository(owner:"prajss", name:"build-nextapp") {
+        repository(owner:"prajss", name:"public-test-repo-reactions") {
           issue(number:1) {
             reactionGroups {
               content
@@ -81,7 +81,7 @@ export default function Home({ reactions }) {
         <h2>Static Reactions Demo</h2>
         <h3>
           Reactions on{' '}
-          <a href="https://github.com/vercel/reactions/issues/1">
+          <a href="https://github.com/prajss/public-test-repo-reactions/issues/1">
             this GitHub issue
           </a>
           :
