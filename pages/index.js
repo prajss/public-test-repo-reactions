@@ -26,7 +26,7 @@ export async function getStaticProps() {
     },
     body: JSON.stringify({
       query: `query {
-        repository(owner:"vercel", name:"reactions") {
+        repository(owner:"prajss", name:"build-nextapp") {
           issue(number:1) {
             reactionGroups {
               content
