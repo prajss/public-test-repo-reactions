@@ -22,7 +22,7 @@ export async function getStaticProps() {
   const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      Authorization: `bearer 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`,
+      Authorization: `bearer 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`,
     },
     body: JSON.stringify({
       query: `query {
